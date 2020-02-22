@@ -30,6 +30,12 @@ h1 {
 	background-color: white;
 	display: block;
 }
+.form-screen {
+	display: none;
+}
+.active-form-screen {
+	display: block;
+}
 #progress {
 	margin-bottom: 20px;
 }
@@ -49,6 +55,15 @@ h1 {
 	bottom: 30px;
 	padding: 10px 20px;
 	cursor: pointer;
+}
+.btn:disabled,
+.btn[disabled],
+#btn-next:disabled,
+#btn-next[disabled],
+#btn-prev:disabled,
+#btn-prev[disabled] {
+	background-color: #ccc;
+	cursor: not-allowed;
 }
 #btn-next {
 	right: 30px;
@@ -77,6 +92,9 @@ h1 {
 		#185a9d,
 		#43cea2
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.active-past {
+	background: #597a9c;
 }
 #circle-1 {
 	left: 30px;

@@ -24,11 +24,30 @@
                 <span id="circle-3" class="circle"></span>
                 <span id="circle-4" class="circle"></span>
             </div>
-            <input class="border text-field" type="text" placeholder="Name">
-            <input class="border text-field" type="email" placeholder="Email">
-            <input class="border text-field" type="password" placeholder="Password">
 
-            <button id="btn-prev" class="btn border">Prev</button>
+            <form action="">
+                <div id="first-form-screen" class="form-screen active-form-screen">
+                    <input class="border text-field" type="text" placeholder="Name">
+                    <input class="border text-field" type="email" placeholder="Email">
+                    <input class="border text-field" type="password" placeholder="Password">
+                </div>
+                <div id="second-form-screen" class="form-screen">
+                    <input class="border text-field" type="text" placeholder="Country">
+                    <input class="border text-field" type="text" placeholder="Town">
+                    <input class="border text-field" type="number" placeholder="Postal code">
+                </div>
+                <div id="third-form-screen" class="form-screen">
+                    <input class="border text-field" type="text" placeholder="Favorite book">
+                    <input class="border text-field" type="text" placeholder="Favorite film">
+                    <input class="border text-field" type="text" placeholder="Favorite music">
+                </div>
+                <div id="forth-form-screen" class="form-screen">
+                    <input class="border text-field" type="text" placeholder="Favorite sport">
+                </div>
+
+            </form>
+
+            <button id="btn-prev" class="btn border" disabled>Prev</button>
             <button id="btn-next" class="btn border">Next</button>
         </div>
     </div>
