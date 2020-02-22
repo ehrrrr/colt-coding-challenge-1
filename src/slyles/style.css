@@ -1,3 +1,92 @@
 body {
-	background-color: aquamarine;
+	background: #43cea2;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+	font-family: 'Kaushan Script', serif;
+	text-align: center;
+	color: white;
+	margin-top: 60px;
+	font-size: 3.5em;
+}
+#master-container {
+	background: #43cea2; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #185a9d, #43cea2); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#185a9d,
+		#43cea2
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+}
+#form-container {
+	position: relative;
+	margin: 30px auto;
+	padding: 40px;
+	height: 300px;
+	width: 350px;
+	background-color: white;
+	display: block;
+}
+#progress {
+	margin-bottom: 20px;
+}
+.border {
+	border-radius: 10px;
+	border: none;
+	outline: none;
+}
+.text-field {
+	border: 1px solid #333;
+	width: 320px;
+	margin: 10px auto;
+	padding: 8px 12px;
+}
+.btn {
+	position: absolute;
+	bottom: 30px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+#btn-next {
+	right: 30px;
+	background-color: #34a5a0;
+	color: white;
+}
+#btn-prev {
+	left: 30px;
+	background-color: #23789e;
+	color: white;
+}
+.circle {
+	height: 24px;
+	width: 24px;
+	background-color: #afc9c1;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+}
+.active-circle {
+	background: #185a9d;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #185a9d, #43cea2); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#185a9d,
+		#43cea2
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#circle-1 {
+	left: 30px;
+}
+#circle-2 {
+	right: 110px;
+}
+#circle-3 {
+	right: 70px;
+}
+#circle-4 {
+	right: 30px;
 }
