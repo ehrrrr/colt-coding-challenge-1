@@ -20,13 +20,20 @@ class StepperForm {
 		this.toggleActive();
 		this.screenCounter++;
 		this.toggleActive();
-		this.prevBtn.disabled = Boolean(!this.screenCounter);
+		this.prevBtn.disabled = false;
+		if (this.screenCounter >= 3) {
+			this.nextBtn.disabled = true;
+		}
 	}
 
 	prev() {
 		this.toggleActive();
 		this.screenCounter--;
 		this.toggleActive();
+		this.nextBtn.disabled = false;
+		if (this.screenCounter <= 0) {
+			this.prevBtn.disabled = true;
+		}
 	}
 
 	toggleActive() {
