@@ -25,11 +25,11 @@
                 <span id="circle-4" class="circle"></span>
             </div>
 
-            <form action="">
+            <form>
                 <div id="first-form-screen" class="form-screen active-form-screen">
-                    <input class="border text-field" type="text" placeholder="Name">
-                    <input class="border text-field" type="email" placeholder="Email">
-                    <input class="border text-field" type="password" placeholder="Password">
+                    <input required class="border text-field" type="text" placeholder="*Name">
+                    <input required class="border text-field" type="email" placeholder="*Email">
+                    <input required class="border text-field" type="password" minlength="6" placeholder="*Password">
                 </div>
                 <div id="second-form-screen" class="form-screen">
                     <input class="border text-field" type="text" placeholder="Country">
@@ -38,11 +38,19 @@
                 </div>
                 <div id="third-form-screen" class="form-screen">
                     <input class="border text-field" type="text" placeholder="Favorite book">
-                    <input class="border text-field" type="text" placeholder="Favorite film">
+                    <input class="border text-field" type="text" placeholder="Favorite movie">
                     <input class="border text-field" type="text" placeholder="Favorite music">
                 </div>
                 <div id="forth-form-screen" class="form-screen">
                     <input class="border text-field" type="text" placeholder="Favorite sport">
+                    <input class="border text-field" type="text" placeholder="Favorite color">
+                    <fieldset>
+                        <legend>Where do you prefer?</legend>
+                        <input type="radio" id="sea" name="place" value="sea">
+                        <label for="sea">Sea</label><br>
+                        <input type="radio" id="mountain" name="place" value="mountain">
+                        <label for="mountain">Mountain</label>
+                    </fieldset>
                 </div>
 
                 <button id="btn-submit" class="btn border" disabled>Submit</button>
