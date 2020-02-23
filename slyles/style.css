@@ -62,10 +62,11 @@ h1 {
 #btn-next[disabled],
 #btn-prev:disabled,
 #btn-prev[disabled] {
-	background-color: #ccc;
+	background-color: #d7dee2;
 	cursor: not-allowed;
 }
-#btn-next {
+#btn-next,
+#btn-submit {
 	right: 30px;
 	background-color: #34a5a0;
 	color: white;
@@ -75,10 +76,13 @@ h1 {
 	background-color: #23789e;
 	color: white;
 }
+#btn-submit {
+	visibility: hidden;
+}
 .circle {
 	height: 24px;
 	width: 24px;
-	background-color: #afc9c1;
+	background-color: #abc0c9;
 	border-radius: 50%;
 	display: inline-block;
 	position: absolute;
@@ -95,6 +99,14 @@ h1 {
 }
 .active-past {
 	background: #597a9c;
+}
+.circle-go-left {
+	transform: translateX(-225px);
+	transition: transform .7s ease;
+}
+.circle-go-right {
+	transform: translateX(0px);
+	transition: transform .7s ease;
 }
 #circle-1 {
 	left: 30px;
