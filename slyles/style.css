@@ -86,6 +86,7 @@ h1 {
 	border-radius: 50%;
 	display: inline-block;
 	position: absolute;
+	top: 40px;
 }
 .active-circle {
 	background: #185a9d;
