@@ -15,6 +15,26 @@ class StepperForm {
 		this.prevBtn.addEventListener('click', () => {
 			this.prev();
 		});
+
+		document.onkeydown = (e) => {
+			e = e || window.event;
+
+			// Right arrow key
+			if (e.keyCode == '39') {
+				if (this.screenCounter >= 0 && this.screenCounter < 3) {
+					this.next();
+				}
+			}
+			// Left arrow key
+			if (e.keyCode == '37') {
+				if (this.screenCounter > 0 && this.screenCounter <= 3) {
+					this.prev();
+				}
+			}
+
+			// Submit on enter
+			if (e.keyCode == '13' && !this.submitBtn.disabled) alert('Thanks');
+		};
 	}
 
 	next() {
